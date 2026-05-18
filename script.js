@@ -8,7 +8,7 @@ fetch("direcciones.json")
   preguntas = data.sort(()=>Math.random()-0.5).slice(0,25);
   mostrarPregunta();
 });
-
+respondida = false;
 function mostrarPregunta(){
 
   const p = preguntas[indice];
