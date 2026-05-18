@@ -1,0 +1,39 @@
+body{
+  font-family: Arial;
+  background:#f2f2f2;
+  padding:15px;
+  max-width:500px;
+  margin:auto;
+}
+
+h1{
+  text-align:center;
+}
+
+#info{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+}
+
+#contenedor{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  margin-top:8px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  background:#007bff;
+  color:white;
+}
+
+.opcion{
+  background:#e9ecef;
+  color:black;
+}

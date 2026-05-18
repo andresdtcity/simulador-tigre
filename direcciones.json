@@ -1,0 +1,302 @@
+[
+  {
+    "nombre": "cuartel central benavidez",
+    "direccion": "gral roca 2799"
+  },
+  {
+    "nombre": "cuartel central tigre",
+    "direccion": "pedro guareschi 462"
+  },
+  {
+    "nombre": "destacamento rincon de milberg",
+    "direccion": "santa maria 3735"
+  },
+  {
+    "nombre": "destacamento troncos del talar",
+    "direccion": "lisandro de la torre 2018"
+  },
+  {
+    "nombre": "cuartel central general pacheco",
+    "direccion": "av hipolito yrigoyen 566"
+  },
+  {
+    "nombre": "destacamento ricardo rojas",
+    "direccion": "avellaneda 2443"
+  },
+  {
+    "nombre": "destacamento almirante brown",
+    "direccion": "197 y saladillo"
+  },
+  {
+    "nombre": "cuartel central don torcuato",
+    "direccion": "ombu 2858"
+  },
+  {
+    "nombre": "destacamento 3 delta de tigre",
+    "direccion": "arroyo espera n° 266 muelle cuatro mosquitos"
+  },
+  {
+    "nombre": "destacamento 1 dique lujan/villa la ñata",
+    "direccion": "12 de octubre"
+  },
+  {
+    "nombre": "hospital materno infantil \"dr. Florencio escardo\"",
+    "direccion": "carlos alvear 1666 entre sarmiento y saavedra"
+  },
+  {
+    "nombre": "hospital municipal de diagnostico inmediato dr valentin nores",
+    "direccion": "maipu 257"
+  },
+  {
+    "nombre": "centro de salud carupa",
+    "direccion": "ruperto mazza 1154"
+  },
+  {
+    "nombre": "centro de salud canal",
+    "direccion": "italia 105"
+  },
+  {
+    "nombre": "centro de salud juan urionaguena",
+    "direccion": "coronel rosales y lucio lopez b° los tabanos"
+  },
+  {
+    "nombre": "centro de salud rincon de milberg",
+    "direccion": "santa maria esq irala"
+  },
+  {
+    "nombre": "hospital oftalmologico \"dr ramon carrillo",
+    "direccion": "lisandro de la torre 1324"
+  },
+  {
+    "nombre": "centro de salud troncos del talar",
+    "direccion": "escalada 598"
+  },
+  {
+    "nombre": "centro de salud juana manso",
+    "direccion": "agustin garcia 5960"
+  },
+  {
+    "nombre": "centro de salud dique lujan",
+    "direccion": "12 de octubre 943"
+  },
+  {
+    "nombre": "centro de salud benavidez",
+    "direccion": "alvear esq marabotto"
+  },
+  {
+    "nombre": "centro de salud el arco",
+    "direccion": "tomas godoy cruz 1182"
+  },
+  {
+    "nombre": "hospital municipal de diagnostico inmediato dr eduardo juan mocoroa",
+    "direccion": "fernando fader entre san martin y moreno"
+  },
+  {
+    "nombre": "hospital odontologico prof. Dr. Ricardo guardo",
+    "direccion": "hipolito yrigoyen (ex ruta 197) esq san lorenzo"
+  },
+  {
+    "nombre": "centro de prevencion y asistencia en nutricion (cepan)",
+    "direccion": "av de los constituyentes 3284"
+  },
+  {
+    "nombre": "centro de salud las tunas",
+    "direccion": "aristides sacriste 2900"
+  },
+  {
+    "nombre": "centro de salud general pacheco",
+    "direccion": "salta 550"
+  },
+  {
+    "nombre": "centro de salud eva peron",
+    "direccion": "padres nuestro y sans sousi"
+  },
+  {
+    "nombre": "centro de rehabilitacion frida kahlo",
+    "direccion": "av hipolito yrigoyen 1400 entre ramon castilla y o'higgins"
+  },
+  {
+    "nombre": "hospital provincial magdalena v. de martinez",
+    "direccion": "av constituyentes 395"
+  },
+  {
+    "nombre": "centro de salud ricardoo rojas",
+    "direccion": "richieri esq elizalde"
+  },
+  {
+    "nombre": "centro de salud almirante brown",
+    "direccion": "gral juan andre 3010"
+  },
+  {
+    "nombre": "centro de salud la paloma",
+    "direccion": "av la paloma entre monteagudo y paraguay"
+  },
+  {
+    "nombre": "hospital municipal de diagnostico inmediato dr. Floreal ferrara",
+    "direccion": "colectora oeste esq menendez y pelayo"
+  },
+  {
+    "nombre": "centro de salud baires",
+    "direccion": "blandengues entre alvear y ombu"
+  },
+  {
+    "nombre": "centro de salud don torcuato",
+    "direccion": "arata esq españa"
+  },
+  {
+    "nombre": "centro de salud general belgrano",
+    "direccion": "av belgrano 1661"
+  },
+  {
+    "nombre": "destacamento villa la ñata",
+    "direccion": "ruta 27 y diego palma"
+  },
+  {
+    "nombre": "comisaria 4ta benavidez",
+    "direccion": "av gral roca 2446"
+  },
+  {
+    "nombre": "destacamento rincon de milberg",
+    "direccion": "santa maria y patagones"
+  },
+  {
+    "nombre": "subcomisaria delta",
+    "direccion": "sarmiento 373"
+  },
+  {
+    "nombre": "jefatura departamental conurbano norte",
+    "direccion": "montes de oca y av cazon"
+  },
+  {
+    "nombre": "comisaria 1ra tigre centro",
+    "direccion": "bourdieu 348"
+  },
+  {
+    "nombre": "jefatura de policia distrito tigre",
+    "direccion": "benito lynch y acceso tigre"
+  },
+  {
+    "nombre": "destacamento troncos del talar",
+    "direccion": "nuestra sra de lujan y rocha"
+  },
+  {
+    "nombre": "comisaria 2da general pacheco",
+    "direccion": "hipolito yrigoyen 745"
+  },
+  {
+    "nombre": "destacamento bancalari",
+    "direccion": "gral alvear y blandengues"
+  },
+  {
+    "nombre": "comisaria de la mujer y la familia",
+    "direccion": "av constituyentes y cordoba"
+  },
+  {
+    "nombre": "detacamento las tunas",
+    "direccion": "av constituyentes 2901 entre alsina y mansilla"
+  },
+  {
+    "nombre": "destacamento ricardo rojas",
+    "direccion": "fray luis leon y delcasse"
+  },
+  {
+    "nombre": "comisaria 5ta el talar",
+    "direccion": "gelly y obes esq alemania"
+  },
+  {
+    "nombre": "comisaria 3ra don torcuato",
+    "direccion": "av angel t. de alvear 635"
+  },
+  {
+    "nombre": "coomando de patrullas bonaerense",
+    "direccion": "av del trabajo y sucre"
+  },
+  {
+    "nombre": "comisaria 6ta el talar",
+    "direccion": "hipolito yrigoyen y suiza"
+  },
+  {
+    "nombre": "centro de operaciones tigre",
+    "direccion": "diego santillan y av liniers"
+  },
+  {
+    "nombre": "fiscalia de rincon de milberg",
+    "direccion": "patagones y santa maria"
+  },
+  {
+    "nombre": "fiscalia de general pacheco",
+    "direccion": "entre rios 559"
+  },
+  {
+    "nombre": "juzgado de paz de tigre",
+    "direccion": "av libertador san martin 254"
+  },
+  {
+    "nombre": "fiscalia especializada en violencia de genero",
+    "direccion": "lisandro de la torre 314"
+  },
+  {
+    "nombre": "fiscalia de el talar",
+    "direccion": "suiza 1050"
+  },
+  {
+    "nombre": "fiscalia de don torcuato",
+    "direccion": "av angel t. de alvear 637"
+  },
+  {
+    "nombre": "prefectura zona delta",
+    "direccion": "lavalle 13"
+  },
+  {
+    "nombre": "prefectura tigre",
+    "direccion": "gral bartolome mitre 176"
+  },
+  {
+    "nombre": "prefectura division depro",
+    "direccion": "caseros 700"
+  },
+  {
+    "nombre": "municipio de tigre",
+    "direccion": "av cazon 1514"
+  },
+  {
+    "nombre": "museo de tigre MAT",
+    "direccion": "paseo victoria 972"
+  },
+  {
+    "nombre": "puerto de frutos",
+    "direccion": "sarmiento 160"
+  },
+  {
+    "nombre": "anses pacheco",
+    "direccion": "av pres. hipolito yrigoyen 576"
+  },
+  {
+    "nombre": "anses talar",
+    "direccion": "colectora oeste ramal pilar 12"
+  },
+  {
+    "nombre": "ministerio del trabajo",
+    "direccion": "av cazon 171"
+  },
+  {
+    "nombre": "pami agencia tigre",
+    "direccion": "av cazon 966"
+  },
+  {
+    "nombre": "pami general pacheco",
+    "direccion": "av pres. hipolito yrigoyen 1795"
+  },
+  {
+    "nombre": "pami talar",
+    "direccion": "pasteur 1099"
+  },
+  {
+    "nombre": "afip",
+    "direccion": "av cazon 783"
+  },
+  {
+    "nombre": "zoonosis",
+    "direccion": "pueyrredon 211"
+  }
+]
