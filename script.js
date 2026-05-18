@@ -37,10 +37,39 @@ function mostrarPregunta(){
   });
 }
 
-function responder(seleccion,correcta){
+let respondida = false;
 
-  if(seleccion===correcta){
+function responder(btn, seleccion, correcta) {
+
+  if (respondida) return;
+
+  respondida = true;
+
+  const botones =
+    document.querySelectorAll(".opcion");
+
+  botones.forEach(b => {
+    b.disabled = true;
+  });
+
+  if (seleccion === correcta) {
+    btn.classList.add("correcta");
     puntaje++;
+  }
+  else {
+
+    btn.classList.add("incorrecta");
+
+    botones.forEach(b => {
+      if (b.innerText === correcta) {
+        b.classList.add("correcta");
+      }
+    });
+
+    errores.push({
+      pregunta: preguntas[indice].nombre,
+      correcta: correcta
+    });
   }
 }
 
