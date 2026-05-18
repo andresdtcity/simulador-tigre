@@ -40,7 +40,7 @@ function mostrarPregunta(){
     btn.className = "opcion";
     btn.innerText = op;
 
-    btn.onclick = ()=>responder(op,p.direccion);
+    btn.onclick = () => responder(btn, op, p.direccion);
 
     cont.appendChild(btn);
   });
