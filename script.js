@@ -1,3 +1,12 @@
+function comenzarExamen(){
+
+  document.getElementById("inicio")
+    .style.display = "none";
+
+  document.getElementById("contenedor")
+    .style.display = "block";
+
+  }
 let preguntas = [];
 let indice = 0;
 let puntaje = 0;
