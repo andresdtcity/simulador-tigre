@@ -19,8 +19,9 @@ fetch("direcciones.json")
   preguntas = data.sort(()=>Math.random()-0.5).slice(0,25);
   mostrarPregunta();
 });
-respondida = false;
+let respondida = false;
 function mostrarPregunta(){
+  respondida = false;
 
   const p = preguntas[indice];
 
@@ -84,16 +85,25 @@ function responder(btn, seleccion, correcta) {
   }
 }
 
-function siguiente(){
+if (!respondida) {
+  alert("Seleccioná una respuesta");
+  return;
+}
+
+function siguiente() {
+
+  if (!respondida) {
+    alert("Seleccioná una respuesta");
+    return;
+  }
 
   indice++;
 
-  if(indice<preguntas.length){
+  if (indice < preguntas.length) {
     mostrarPregunta();
   }
-  else{
-    document.getElementById("contenedor").innerHTML =
-      `<h2>Resultado: ${puntaje}/25</h2>`;
+  else {
+    terminar();
   }
 }
 
