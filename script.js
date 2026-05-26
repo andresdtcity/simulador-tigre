@@ -6,6 +6,8 @@ function comenzarExamen(){
   document.getElementById("contenedor")
     .style.display = "block";
 
+    
+
   }
 let preguntas = [];
 let indice = 0;
