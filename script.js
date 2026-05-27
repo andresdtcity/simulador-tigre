@@ -45,6 +45,9 @@ function mostrarPregunta() {
 
     let p = preguntas[indice];
 
+    document.getElementById("numeroPregunta").innerText =
+    "Pregunta " + (indice + 1) + " de " + preguntas.length;
+
     document.getElementById("pregunta").innerText =
         "¿Dónde se encuentra " + p.nombre + "?";
 
@@ -86,21 +89,46 @@ function mostrarPregunta() {
 
         btn.onclick = function () {
 
-            if (respondida) return;
+    if (respondida) return;
 
-            respondida = true;
+    respondida = true;
 
-            if (op === p.direccion) {
+    let botones =
+        document.querySelectorAll(".opcion");
 
-                btn.style.background = "green";
-                puntaje++;
+    botones.forEach(b => {
+        b.disabled = true;
+    });
 
-            } else {
+    if (op === p.direccion) {
 
-                btn.style.background = "red";
+        btn.style.background = "green";
+        puntaje++;
 
+    } else {
+
+        btn.style.background = "red";
+
+        botones.forEach(b => {
+
+            if (b.innerText === p.direccion) {
+
+                b.style.background = "green";
             }
-        };
+        });
+
+        let correcto =
+            document.createElement("p");
+
+        correcto.innerHTML =
+            "<b>Respuesta correcta:</b> " +
+            p.direccion;
+
+        correcto.style.marginTop = "10px";
+
+        cont.appendChild(correcto);
+    }
+};
 
         cont.appendChild(btn);
     });
