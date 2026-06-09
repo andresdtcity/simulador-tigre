@@ -2,6 +2,7 @@ let preguntas = [];
 let indice = 0;
 let respondida = false;
 let puntaje = 0;
+let errores = new Set();
 const TOTAL_PREGUNTAS = 30;
 
 fetch("direcciones.json")
@@ -37,17 +38,25 @@ function siguiente() {
     } else {
 
         document.getElementById("contenedor").innerHTML =
-            `
-            <h2>Examen finalizado</h2>
+`
+<h2>Examen finalizado</h2>
 
-            <h3>
-                Resultado: ${puntaje}/${preguntas.length}
-            </h3>
+<h3>
+Resultado: ${puntaje}/${preguntas.length}
+</h3>
 
-            <button onclick="reiniciarExamen()">
-                Reiniciar examen
-            </button>
-            `;
+<p>
+Errores: ${errores.length}
+</p>
+
+<button onclick="reiniciarExamen()">
+Reiniciar examen
+</button>
+
+<button onclick="practicarErrores()">
+Practicar errores
+</button>
+`;
     }
 }
 
@@ -117,35 +126,149 @@ function mostrarPregunta() {
         btn.style.background = "green";
         puntaje++;
 
-    } else {
+   } else {
 
-        btn.style.background = "red";
+    btn.style.background = "red";
 
-        botones.forEach(b => {
+    errores.push({
+        nombre: p.nombre,
+        direccion: p.direccion
+    });
 
-            if (b.innerText === p.direccion) {
+    botones.forEach(b => {
 
-                b.style.background = "green";
-            }
-        });
+        if (b.innerText === p.direccion) {
 
-        let correcto =
-            document.createElement("p");
+            b.style.background = "green";
+        }
+    });
 
-        correcto.innerHTML =
-            "<b>Respuesta correcta:</b> " +
-            p.direccion;
+    let correcto =
+        document.createElement("p");
 
-        correcto.style.marginTop = "10px";
+    correcto.innerHTML =
+        "<b>Respuesta correcta:</b> " +
+        p.direccion;
 
-        cont.appendChild(correcto);
+    correcto.style.marginTop = "10px";
+
+    cont.appendChild(correcto);
+        }
+    };
+
+    document
+        .getElementById("opciones")
+        .appendChild(btn);
+    });
+}
+
+function practicarErrores() {
+
+    if (errores.length === 0) {
+        alert("No hay errores para practicar");
+        return;
     }
-};
 
-        cont.appendChild(btn);
+    let nombres = [...errores];
+    let direcciones = [...errores];
+
+    direcciones.sort(() => Math.random() - 0.5);
+
+    let html = `
+        <h2>Unir pares</h2>
+        <p>Seleccioná una dependencia y luego una dirección</p>
+
+        <div id="juego" style="display:flex;gap:20px;">
+            <div id="columnaNombres"></div>
+            <div id="columnaDirecciones"></div>
+        </div>
+
+        <h3 id="estado"></h3>
+    `;
+
+    document.getElementById("contenedor").innerHTML = html;
+
+    let seleccionado = null;
+    let aciertos = 0;
+
+    nombres.forEach(item => {
+
+        let btn = document.createElement("button");
+
+        btn.innerText = item.nombre;
+        btn.className = "nombre";
+
+        btn.onclick = () => {
+            seleccionado = item;
+            document.getElementById("estado").innerText =
+                "Seleccionaste: " + item.nombre;
+        };
+
+        document
+            .getElementById("columnaNombres")
+            .appendChild(btn);
+    });
+
+    direcciones.forEach(item => {
+
+        let btn = document.createElement("button");
+
+        btn.innerText = item.direccion;
+        btn.className = "direccion";
+
+        btn.onclick = () => {
+
+            if (!seleccionado) {
+                alert("Primero elegí una dependencia");
+                return;
+            }
+
+            if (seleccionado.direccion === item.direccion) {
+
+                btn.style.background = "green";
+
+                btn.disabled = true;
+
+                aciertos++;
+
+                document.getElementById("estado").innerText =
+                    "✅ Correcto";
+
+            } else {
+
+                btn.style.background = "red";
+
+                document.getElementById("estado").innerText =
+                    "❌ Incorrecto";
+            }
+
+            seleccionado = null;
+
+            if (aciertos === errores.length) {
+
+                setTimeout(() => {
+
+                    document.getElementById("contenedor").innerHTML = `
+                        <h2>🎉 Ejercicio completado</h2>
+
+                        <button onclick="location.reload()">
+                            Nuevo examen
+                        </button>
+                    `;
+
+                }, 1000);
+            }
+        };
+
+        document
+            .getElementById("columnaDirecciones")
+            .appendChild(btn);
     });
 }
 function reiniciarExamen() {
+
+    preguntas = preguntas
+        .sort(() => Math.random() - 0.5);
 
     location.reload();
 }
