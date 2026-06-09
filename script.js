@@ -2,11 +2,14 @@ let preguntas = [];
 let indice = 0;
 let respondida = false;
 let puntaje = 0;
+const TOTAL_PREGUNTAS = 30;
 
 fetch("direcciones.json")
 .then(r => r.json())
 .then(data => {
-    preguntas = data;
+    preguntas = data
+    .sort(() => Math.random() - 0.5)
+    .slice(0, TOTAL_PREGUNTAS);
 });
 
 function comenzarExamen() {
@@ -34,8 +37,17 @@ function siguiente() {
     } else {
 
         document.getElementById("contenedor").innerHTML =
-            "<h2>Examen terminado</h2>" +
-            "<h3>Puntaje: " + puntaje + "/" + preguntas.length + "</h3>";
+            `
+            <h2>Examen finalizado</h2>
+
+            <h3>
+                Resultado: ${puntaje}/${preguntas.length}
+            </h3>
+
+            <button onclick="reiniciarExamen()">
+                Reiniciar examen
+            </button>
+            `;
     }
 }
 
@@ -132,4 +144,8 @@ function mostrarPregunta() {
 
         cont.appendChild(btn);
     });
+}
+function reiniciarExamen() {
+
+    location.reload();
 }
