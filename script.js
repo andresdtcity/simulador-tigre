@@ -2,7 +2,7 @@ let preguntas = [];
 let indice = 0;
 let respondida = false;
 let puntaje = 0;
-let errores = new Set();
+let errores = [];
 const TOTAL_PREGUNTAS = 30;
 
 fetch("direcciones.json")
