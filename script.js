@@ -4,6 +4,8 @@ let respondida = false;
 let puntaje = 0;
 let errores = [];
 const TOTAL_PREGUNTAS = 30;
+const sonidoError = new Audio("error.mp3");
+const sonidoAcierto = new Audio("acierto.mp3");
 
 fetch("direcciones.json")
 .then(r => r.json())
@@ -130,10 +132,14 @@ if (mapa) {
 
         btn.style.background = "green";
         puntaje++;
+        sonidoAcierto.currentTime = 0;
+sonidoAcierto.play();
 
    } else {
 
     btn.style.background = "red";
+    sonidoError.currentTime = 0;
+sonidoError.play();
 
     errores.push({
         nombre: p.nombre,
