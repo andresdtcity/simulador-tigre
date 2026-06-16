@@ -62,6 +62,11 @@ Practicar errores
 
 function mostrarPregunta() {
 
+    let mapa = document.getElementById("mapa");
+
+if (mapa) {
+    mapa.innerHTML = "";
+}
     respondida = false;
 
     let p = preguntas[indice];
@@ -149,6 +154,19 @@ function mostrarPregunta() {
     correcto.innerHTML =
         "<b>Respuesta correcta:</b> " +
         p.direccion;
+
+        document.getElementById("mapa").innerHTML = `
+    <h4>Ubicación en Google Maps</h4>
+
+    <iframe
+        width="100%"
+        height="300"
+        style="border:0;border-radius:10px;"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps?q=${encodeURIComponent(p.direccion + ', Tigre, Buenos Aires')}&output=embed">
+    </iframe>
+`;
 
     correcto.style.marginTop = "10px";
 
