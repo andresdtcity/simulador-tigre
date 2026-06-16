@@ -1,302 +1,377 @@
 [
   {
     "nombre": "cuartel central benavidez",
-    "direccion": "gral roca 2799"
+    "direccion": "gral roca 2799",
+    "maps": "https://www.google.com/maps?q=gral+roca+2799,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "cuartel central tigre",
-    "direccion": "pedro guareschi 462"
+    "direccion": "pedro guareschi 462",
+    "maps": "https://www.google.com/maps?q=pedro+guareschi+462,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento rincon de milberg",
-    "direccion": "santa maria 3735"
+    "direccion": "santa maria 3735",
+    "maps": "https://www.google.com/maps?q=santa+maria+3735,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento troncos del talar",
-    "direccion": "lisandro de la torre 2018"
+    "direccion": "lisandro de la torre 2018",
+    "maps": "https://www.google.com/maps?q=lisandro+de+la+torre+2018,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "cuartel central general pacheco",
-    "direccion": "av hipolito yrigoyen 566"
+    "direccion": "av hipolito yrigoyen 566",
+    "maps": "https://www.google.com/maps?q=av+hipolito+yrigoyen+566,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento ricardo rojas",
-    "direccion": "avellaneda 2443"
+    "direccion": "avellaneda 2443",
+    "maps": "https://www.google.com/maps?q=avellaneda+2443,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento almirante brown",
-    "direccion": "197 y saladillo"
+    "direccion": "197 y saladillo",
+    "maps": "https://www.google.com/maps?q=197+y+saladillo,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "cuartel central don torcuato",
-    "direccion": "ombu 2858"
+    "direccion": "ombu 2858",
+    "maps": "https://www.google.com/maps?q=ombu+2858,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento 3 delta de tigre",
-    "direccion": "arroyo espera n° 266 muelle cuatro mosquitos"
+    "direccion": "arroyo espera n° 266 muelle cuatro mosquitos",
+    "maps": "https://www.google.com/maps?q=arroyo+espera+n°+266+muelle+cuatro+mosquitos,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento 1 dique lujan/villa la ñata",
-    "direccion": "12 de octubre"
+    "direccion": "12 de octubre",
+    "maps": "https://www.google.com/maps?q=12+de+octubre,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "hospital materno infantil \"dr. Florencio escardo\"",
-    "direccion": "carlos alvear 1666 entre sarmiento y saavedra"
+    "direccion": "carlos alvear 1666 entre sarmiento y saavedra",
+    "maps": "https://www.google.com/maps?q=carlos+alvear+1666+entre+sarmiento+y+saavedra,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "hospital municipal de diagnostico inmediato dr valentin nores",
-    "direccion": "maipu 257"
+    "direccion": "maipu 257",
+    "maps": "https://www.google.com/maps?q=maipu+257,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud carupa",
-    "direccion": "ruperto mazza 1154"
+    "direccion": "ruperto mazza 1154",
+    "maps": "https://www.google.com/maps?q=ruperto+mazza+1154,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud canal",
-    "direccion": "italia 105"
+    "direccion": "italia 105",
+    "maps": "https://www.google.com/maps?q=italia+105,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud juan urionaguena",
-    "direccion": "coronel rosales y lucio lopez b° los tabanos"
+    "direccion": "coronel rosales y lucio lopez b° los tabanos",
+    "maps": "https://www.google.com/maps?q=coronel+rosales+y+lucio+lopez+b°+los+tabanos,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud rincon de milberg",
-    "direccion": "santa maria esq irala"
+    "direccion": "santa maria esq irala",
+    "maps": "https://www.google.com/maps?q=santa+maria+esq+irala,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "hospital oftalmologico \"dr ramon carrillo",
-    "direccion": "lisandro de la torre 1324"
+    "direccion": "lisandro de la torre 1324",
+    "maps": "https://www.google.com/maps?q=lisandro+de+la+torre+1324,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud troncos del talar",
-    "direccion": "escalada 598"
+    "direccion": "escalada 598",
+    "maps": "https://www.google.com/maps?q=escalada+598,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud juana manso",
-    "direccion": "agustin garcia 5960"
+    "direccion": "agustin garcia 5960",
+    "maps": "https://www.google.com/maps?q=agustin+garcia+5960,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud dique lujan",
-    "direccion": "12 de octubre 943"
+    "direccion": "12 de octubre 943",
+    "maps": "https://www.google.com/maps?q=12+de+octubre+943,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud benavidez",
-    "direccion": "alvear esq marabotto"
+    "direccion": "alvear esq marabotto",
+    "maps": "https://www.google.com/maps?q=alvear+esq+marabotto,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud el arco",
-    "direccion": "tomas godoy cruz 1182"
+    "direccion": "tomas godoy cruz 1182",
+    "maps": "https://www.google.com/maps?q=tomas+godoy+cruz+1182,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "hospital municipal de diagnostico inmediato dr eduardo juan mocoroa",
-    "direccion": "fernando fader entre san martin y moreno"
+    "direccion": "fernando fader entre san martin y moreno",
+    "maps": "https://www.google.com/maps?q=fernando+fader+entre+san+martin+y+moreno,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "hospital odontologico prof. Dr. Ricardo guardo",
-    "direccion": "hipolito yrigoyen (ex ruta 197) esq san lorenzo"
+    "direccion": "hipolito yrigoyen (ex ruta 197) esq san lorenzo",
+    "maps": "https://www.google.com/maps?q=hipolito+yrigoyen+(ex+ruta+197)+esq+san+lorenzo,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de prevencion y asistencia en nutricion (cepan)",
-    "direccion": "av de los constituyentes 3284"
+    "direccion": "av de los constituyentes 3284",
+    "maps": "https://www.google.com/maps?q=av+de+los+constituyentes+3284,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud las tunas",
-    "direccion": "aristides sacriste 2900"
+    "direccion": "aristides sacriste 2900",
+    "maps": "https://www.google.com/maps?q=aristides+sacriste+2900,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud general pacheco",
-    "direccion": "salta 550"
+    "direccion": "salta 550",
+    "maps": "https://www.google.com/maps?q=salta+550,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud eva peron",
-    "direccion": "padres nuestro y sans sousi"
+    "direccion": "padres nuestro y sans sousi",
+    "maps": "https://www.google.com/maps?q=padres+nuestro+y+sans+sousi,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de rehabilitacion frida kahlo",
-    "direccion": "av hipolito yrigoyen 1400 entre ramon castilla y o'higgins"
+    "direccion": "av hipolito yrigoyen 1400 entre ramon castilla y o'higgins",
+    "maps": "https://www.google.com/maps?q=av+hipolito+yrigoyen+1400+entre+ramon+castilla+y+o'higgins,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "hospital provincial magdalena v. de martinez",
-    "direccion": "av constituyentes 395"
+    "direccion": "av constituyentes 395",
+    "maps": "https://www.google.com/maps?q=av+constituyentes+395,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud ricardoo rojas",
-    "direccion": "richieri esq elizalde"
+    "direccion": "richieri esq elizalde",
+    "maps": "https://www.google.com/maps?q=richieri+esq+elizalde,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud almirante brown",
-    "direccion": "gral juan andre 3010"
+    "direccion": "gral juan andre 3010",
+    "maps": "https://www.google.com/maps?q=gral+juan+andre+3010,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud la paloma",
-    "direccion": "av la paloma entre monteagudo y paraguay"
+    "direccion": "av la paloma entre monteagudo y paraguay",
+    "maps": "https://www.google.com/maps?q=av+la+paloma+entre+monteagudo+y+paraguay,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "hospital municipal de diagnostico inmediato dr. Floreal ferrara",
-    "direccion": "colectora oeste esq menendez y pelayo"
+    "direccion": "colectora oeste esq menendez y pelayo",
+    "maps": "https://www.google.com/maps?q=colectora+oeste+esq+menendez+y+pelayo,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud baires",
-    "direccion": "blandengues entre alvear y ombu"
+    "direccion": "blandengues entre alvear y ombu",
+    "maps": "https://www.google.com/maps?q=blandengues+entre+alvear+y+ombu,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud don torcuato",
-    "direccion": "arata esq españa"
+    "direccion": "arata esq españa",
+    "maps": "https://www.google.com/maps?q=arata+esq+españa,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de salud general belgrano",
-    "direccion": "av belgrano 1661"
+    "direccion": "av belgrano 1661",
+    "maps": "https://www.google.com/maps?q=av+belgrano+1661,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento villa la ñata",
-    "direccion": "ruta 27 y diego palma"
+    "direccion": "ruta 27 y diego palma",
+    "maps": "https://www.google.com/maps?q=ruta+27+y+diego+palma,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "comisaria 4ta benavidez",
-    "direccion": "av gral roca 2446"
+    "direccion": "av gral roca 2446",
+    "maps": "https://www.google.com/maps?q=av+gral+roca+2446,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento rincon de milberg",
-    "direccion": "santa maria y patagones"
+    "direccion": "santa maria y patagones",
+    "maps": "https://www.google.com/maps?q=santa+maria+y+patagones,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "subcomisaria delta",
-    "direccion": "sarmiento 373"
+    "direccion": "sarmiento 373",
+    "maps": "https://www.google.com/maps?q=sarmiento+373,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "jefatura departamental conurbano norte",
-    "direccion": "montes de oca y av cazon"
+    "direccion": "montes de oca y av cazon",
+    "maps": "https://www.google.com/maps?q=montes+de+oca+y+av+cazon,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "comisaria 1ra tigre centro",
-    "direccion": "bourdieu 348"
+    "direccion": "bourdieu 348",
+    "maps": "https://www.google.com/maps?q=bourdieu+348,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "jefatura de policia distrito tigre",
-    "direccion": "benito lynch y acceso tigre"
+    "direccion": "benito lynch y acceso tigre",
+    "maps": "https://www.google.com/maps?q=benito+lynch+y+acceso+tigre,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento troncos del talar",
-    "direccion": "nuestra sra de lujan y rocha"
+    "direccion": "nuestra sra de lujan y rocha",
+    "maps": "https://www.google.com/maps?q=nuestra+sra+de+lujan+y+rocha,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "comisaria 2da general pacheco",
-    "direccion": "hipolito yrigoyen 745"
+    "direccion": "hipolito yrigoyen 745",
+    "maps": "https://www.google.com/maps?q=hipolito+yrigoyen+745,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento bancalari",
-    "direccion": "gral alvear y blandengues"
+    "direccion": "gral alvear y blandengues",
+    "maps": "https://www.google.com/maps?q=gral+alvear+y+blandengues,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "comisaria de la mujer y la familia",
-    "direccion": "av constituyentes y cordoba"
+    "direccion": "av constituyentes y cordoba",
+    "maps": "https://www.google.com/maps?q=av+constituyentes+y+cordoba,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "detacamento las tunas",
-    "direccion": "av constituyentes 2901 entre alsina y mansilla"
+    "direccion": "av constituyentes 2901 entre alsina y mansilla",
+    "maps": "https://www.google.com/maps?q=av+constituyentes+2901+entre+alsina+y+mansilla,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "destacamento ricardo rojas",
-    "direccion": "fray luis leon y delcasse"
+    "direccion": "fray luis leon y delcasse",
+    "maps": "https://www.google.com/maps?q=fray+luis+león+y+delcasse,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "comisaria 5ta el talar",
-    "direccion": "gelly y obes esq alemania"
+    "direccion": "gelly y obes esq alemania",
+    "maps": "https://www.google.com/maps?q=gelly+y+obes+esq+alemania,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "comisaria 3ra don torcuato",
-    "direccion": "av angel t. de alvear 635"
+    "direccion": "av angel t. de alvear 635",
+    "maps": "https://www.google.com/maps?q=av+angel+t.+de+alvear+635,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "coomando de patrullas bonaerense",
-    "direccion": "av del trabajo y sucre"
+    "direccion": "av del trabajo y sucre",
+    "maps": "https://www.google.com/maps?q=av+del+trabajo+y+sucre,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "comisaria 6ta el talar",
-    "direccion": "hipolito yrigoyen y suiza"
+    "direccion": "hipolito yrigoyen y suiza",
+    "maps": "https://www.google.com/maps?q=hipolito+yrigoyen+y+suiza,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "centro de operaciones tigre",
-    "direccion": "diego santillan y av liniers"
+    "direccion": "diego santillan y av liniers",
+    "maps": "https://www.google.com/maps?q=diego+santillan+y+av+liniers,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "fiscalia de rincon de milberg",
-    "direccion": "patagones y santa maria"
+    "direccion": "patagones y santa maria",
+    "maps": "https://www.google.com/maps?q=patagones+y+santa+maria,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "fiscalia de general pacheco",
-    "direccion": "entre rios 559"
+    "direccion": "entre rios 559",
+    "maps": "https://www.google.com/maps?q=entre+rios+559,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "juzgado de paz de tigre",
-    "direccion": "av libertador san martin 254"
+    "direccion": "av libertador san martin 254",
+    "maps": "https://www.google.com/maps?q=av+libertador+san+martin+254,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "fiscalia especializada en violencia de genero",
-    "direccion": "lisandro de la torre 314"
+    "direccion": "lisandro de la torre 314",
+    "maps": "https://www.google.com/maps?q=lisandro+de+la+torre+314,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "fiscalia de el talar",
-    "direccion": "suiza 1050"
+    "direccion": "suiza 1050",
+    "maps": "https://www.google.com/maps?q=suiza+1050,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "fiscalia de don torcuato",
-    "direccion": "av angel t. de alvear 637"
+    "direccion": "av angel t. de alvear 637",
+    "maps": "https://www.google.com/maps?q=av+angel+t.+de+alvear+637,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "prefectura zona delta",
-    "direccion": "lavalle 13"
+    "direccion": "lavalle 13",
+    "maps": "https://www.google.com/maps?q=lavalle+13,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "prefectura tigre",
-    "direccion": "gral bartolome mitre 176"
+    "direccion": "gral bartolome mitre 176",
+    "maps": "https://www.google.com/maps?q=gral+bartolome+mitre+176,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "prefectura division depro",
-    "direccion": "caseros 700"
+    "direccion": "caseros 700",
+    "maps": "https://www.google.com/maps?q=caseros+700,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "municipio de tigre",
-    "direccion": "av cazon 1514"
+    "direccion": "av cazon 1514",
+    "maps": "https://www.google.com/maps?q=av+cazon+1514,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "museo de tigre MAT",
-    "direccion": "paseo victoria 972"
+    "direccion": "paseo victoria 972",
+    "maps": "https://www.google.com/maps?q=paseo+victoria+972,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "puerto de frutos",
-    "direccion": "sarmiento 160"
+    "direccion": "sarmiento 160",
+    "maps": "https://www.google.com/maps?q=sarmiento+160,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "anses pacheco",
-    "direccion": "av pres. hipolito yrigoyen 576"
+    "direccion": "av pres. hipolito yrigoyen 576",
+    "maps": "https://www.google.com/maps?q=av+pres.+hipolito+yrigoyen+576,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "anses talar",
-    "direccion": "colectora oeste ramal pilar 12"
+    "direccion": "colectora oeste ramal pilar 12",
+    "maps": "https://www.google.com/maps?q=colectora+oeste+ramal+pilar+12,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "ministerio del trabajo",
-    "direccion": "av cazon 171"
+    "direccion": "av cazon 171",
+    "maps": "https://www.google.com/maps?q=av+cazon+171,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "pami agencia tigre",
-    "direccion": "av cazon 966"
+    "direccion": "av cazon 966",
+    "maps": "https://www.google.com/maps?q=av+cazon+966,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "pami general pacheco",
-    "direccion": "av pres. hipolito yrigoyen 1795"
+    "direccion": "av pres. hipolito yrigoyen 1795",
+    "maps": "https://www.google.com/maps?q=av+pres.+hipolito+yrigoyen+1795,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "pami talar",
-    "direccion": "pasteur 1099"
+    "direccion": "pasteur 1099",
+    "maps": "https://www.google.com/maps?q=pasteur+1099,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "afip",
-    "direccion": "av cazon 783"
+    "direccion": "av cazon 783",
+    "maps": "https://www.google.com/maps?q=av+cazon+783,+Tigre,+Buenos+Aires"
   },
   {
     "nombre": "zoonosis",
-    "direccion": "pueyrredon 211"
+    "direccion": "pueyrredon 211",
+    "maps": "https://www.google.com/maps?q=pueyrredon+211,+Tigre,+Buenos+Aires"
   }
 ]

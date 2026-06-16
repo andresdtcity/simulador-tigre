@@ -164,13 +164,26 @@ if (mapa) {
         style="border:0;border-radius:10px;"
         loading="lazy"
         allowfullscreen
-        src="https://www.google.com/maps?q=${encodeURIComponent(p.direccion + ', Tigre, Buenos Aires')}&output=embed">
+        src="https://www.google.com/maps?q=${encodeURIComponent(p.maps + ', Tigre, Buenos Aires')}&output=embed">
     </iframe>
 `;
 
     correcto.style.marginTop = "10px";
 
     cont.appendChild(correcto);
+    document.getElementById("mapa").innerHTML = `
+    <h4>📍 Ubicación</h4>
+
+    <iframe
+        width="100%"
+        height="300"
+        style="border:0;border-radius:10px;"
+        loading="lazy"
+        src="https://maps.google.com/maps?q=${encodeURIComponent(
+            p.direccion + ", Tigre, Buenos Aires"
+        )}&output=embed">
+    </iframe>
+`;
         }
     };
 
