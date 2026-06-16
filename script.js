@@ -174,11 +174,11 @@ function practicarErrores() {
 
     direcciones.sort(() => Math.random() - 0.5);
 
-    let html = `
+    document.getElementById("contenedor").innerHTML = `
         <h2>Unir pares</h2>
         <p>Seleccioná una dependencia y luego una dirección</p>
 
-        <div id="juego" style="display:flex;gap:20px;">
+        <div id="juego">
             <div id="columnaNombres"></div>
             <div id="columnaDirecciones"></div>
         </div>
@@ -186,48 +186,48 @@ function practicarErrores() {
         <h3 id="estado"></h3>
     `;
 
-    document.getElementById("contenedor").innerHTML = html;
-
     let seleccionado = null;
-    let aciertos = 0;
+    let paresResueltos = 0;
 
+    // COLUMNA IZQUIERDA
     nombres.forEach(item => {
 
-    let btn = document.createElement("button");
+        let btn = document.createElement("button");
 
-    btn.innerText = item.nombre;
-    btn.className = "nombre";
+        btn.innerText = item.nombre;
+        btn.className = "nombre";
 
-    btn.onclick = () => {
+        btn.onclick = () => {
 
-        if (btn.disabled) return;
+            if (btn.disabled) return;
 
-        document
-            .querySelectorAll(".nombre")
-            .forEach(b => {
+            document
+                .querySelectorAll(".nombre")
+                .forEach(b => {
 
-                if (!b.disabled) {
-                    b.style.background = "";
-                }
+                    if (!b.disabled) {
+                        b.style.background = "";
+                    }
 
-            });
+                });
 
-        seleccionado = {
-            item: item,
-            boton: btn
+            btn.style.background = "#2196F3";
+
+            seleccionado = {
+                item: item,
+                boton: btn
+            };
+
+            document.getElementById("estado").innerText =
+                "Seleccionaste: " + item.nombre;
         };
 
-        btn.style.background = "#2196F3";
+        document
+            .getElementById("columnaNombres")
+            .appendChild(btn);
+    });
 
-        document.getElementById("estado").innerText =
-            "Seleccionaste: " + item.nombre;
-    };
-
-    document
-        .getElementById("columnaNombres")
-        .appendChild(btn);
-});
-
+    // COLUMNA DERECHA
     direcciones.forEach(item => {
 
         let btn = document.createElement("button");
@@ -237,78 +237,74 @@ function practicarErrores() {
 
         btn.onclick = () => {
 
-    if (!seleccionado) {
+            if (!seleccionado) {
+                alert("Primero elegí una dependencia");
+                return;
+            }
 
-        alert("Primero elegí una dependencia");
-        return;
-    }
+            if (btn.disabled) return;
 
-    if (btn.disabled) return;
+            let botonIzq = seleccionado.boton;
 
-    if (
-        seleccionado.item.direccion ===
-        item.direccion
-    ) {
+            // CORRECTO
+            if (
+                seleccionado.item.direccion ===
+                item.direccion
+            ) {
 
-        seleccionado.boton.style.background =
-            "green";
+                botonIzq.style.background = "green";
+                btn.style.background = "green";
 
-        btn.style.background =
-            "green";
+                botonIzq.disabled = true;
+                btn.disabled = true;
 
-        seleccionado.boton.disabled =
-            true;
+                paresResueltos++;
 
-        btn.disabled =
-            true;
+                document.getElementById("estado").innerText =
+                    "✅ Correcto";
 
-        aciertos++;
+                seleccionado = null;
 
-        document.getElementById("estado")
-            .innerText =
-            "✅ Correcto";
+            }
+            // INCORRECTO
+            else {
 
-    } else {
+                botonIzq.style.background = "red";
+                btn.style.background = "red";
 
-        seleccionado.boton.style.background =
-            "red";
+                document.getElementById("estado").innerText =
+                    "❌ Incorrecto";
 
-        btn.style.background =
-            "red";
+                seleccionado = null;
 
-        document.getElementById("estado")
-            .innerText =
-            "❌ Incorrecto";
+                setTimeout(() => {
 
-        setTimeout(() => {
+                    botonIzq.style.background = "";
+                    btn.style.background = "";
 
-            seleccionado.boton.style.background =
-                "";
+                }, 1000);
+            }
 
-            btn.style.background =
-                "";
+            // TERMINÓ EL JUEGO
+            if (paresResueltos === errores.length) {
 
-        }, 1000);
-    }
+                setTimeout(() => {
 
-    seleccionado = null;
+                    document.getElementById("contenedor").innerHTML = `
+                        <h2>🎉 Ejercicio completado</h2>
 
-    if (aciertos === errores.length) {
+                        <p>
+                            Aprendiste todas las direcciones que habías fallado.
+                        </p>
 
-        setTimeout(() => {
+                        <button onclick="location.reload()">
+                            Nuevo examen
+                        </button>
+                        `;
 
-            document.getElementById("contenedor")
-                .innerHTML = `
-                <h2>🎉 Ejercicio completado</h2>
-
-                <button onclick="location.reload()">
-                    Nuevo examen
-                </button>
-            `;
-
-        }, 1000);
-    }
-};
+                }, 800);
+            }
+        };
 
         document
             .getElementById("columnaDirecciones")

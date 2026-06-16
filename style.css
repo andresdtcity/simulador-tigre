@@ -57,3 +57,20 @@ button{
 .direccion:disabled{
     opacity:1;
 }
+#juego{
+    display:flex;
+    gap:20px;
+}
+
+#columnaNombres,
+#columnaDirecciones{
+    flex:1;
+}
+
+.nombre{
+    text-align:left;
+}
+
+.direccion{
+    text-align:left;
+}
