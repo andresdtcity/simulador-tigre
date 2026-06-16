@@ -193,21 +193,40 @@ function practicarErrores() {
 
     nombres.forEach(item => {
 
-        let btn = document.createElement("button");
+    let btn = document.createElement("button");
 
-        btn.innerText = item.nombre;
-        btn.className = "nombre";
+    btn.innerText = item.nombre;
+    btn.className = "nombre";
 
-        btn.onclick = () => {
-            seleccionado = item;
-            document.getElementById("estado").innerText =
-                "Seleccionaste: " + item.nombre;
-        };
+    btn.onclick = () => {
+
+        if (btn.disabled) return;
 
         document
-            .getElementById("columnaNombres")
-            .appendChild(btn);
-    });
+            .querySelectorAll(".nombre")
+            .forEach(b => {
+
+                if (!b.disabled) {
+                    b.style.background = "";
+                }
+
+            });
+
+        seleccionado = {
+            item: item,
+            boton: btn
+        };
+
+        btn.style.background = "#2196F3";
+
+        document.getElementById("estado").innerText =
+            "Seleccionaste: " + item.nombre;
+    };
+
+    document
+        .getElementById("columnaNombres")
+        .appendChild(btn);
+});
 
     direcciones.forEach(item => {
 
@@ -218,47 +237,78 @@ function practicarErrores() {
 
         btn.onclick = () => {
 
-            if (!seleccionado) {
-                alert("Primero elegí una dependencia");
-                return;
-            }
+    if (!seleccionado) {
 
-            if (seleccionado.direccion === item.direccion) {
+        alert("Primero elegí una dependencia");
+        return;
+    }
 
-                btn.style.background = "green";
+    if (btn.disabled) return;
 
-                btn.disabled = true;
+    if (
+        seleccionado.item.direccion ===
+        item.direccion
+    ) {
 
-                aciertos++;
+        seleccionado.boton.style.background =
+            "green";
 
-                document.getElementById("estado").innerText =
-                    "✅ Correcto";
+        btn.style.background =
+            "green";
 
-            } else {
+        seleccionado.boton.disabled =
+            true;
 
-                btn.style.background = "red";
+        btn.disabled =
+            true;
 
-                document.getElementById("estado").innerText =
-                    "❌ Incorrecto";
-            }
+        aciertos++;
 
-            seleccionado = null;
+        document.getElementById("estado")
+            .innerText =
+            "✅ Correcto";
 
-            if (aciertos === errores.length) {
+    } else {
 
-                setTimeout(() => {
+        seleccionado.boton.style.background =
+            "red";
 
-                    document.getElementById("contenedor").innerHTML = `
-                        <h2>🎉 Ejercicio completado</h2>
+        btn.style.background =
+            "red";
 
-                        <button onclick="location.reload()">
-                            Nuevo examen
-                        </button>
-                    `;
+        document.getElementById("estado")
+            .innerText =
+            "❌ Incorrecto";
 
-                }, 1000);
-            }
-        };
+        setTimeout(() => {
+
+            seleccionado.boton.style.background =
+                "";
+
+            btn.style.background =
+                "";
+
+        }, 1000);
+    }
+
+    seleccionado = null;
+
+    if (aciertos === errores.length) {
+
+        setTimeout(() => {
+
+            document.getElementById("contenedor")
+                .innerHTML = `
+                <h2>🎉 Ejercicio completado</h2>
+
+                <button onclick="location.reload()">
+                    Nuevo examen
+                </button>
+            `;
+
+        }, 1000);
+    }
+};
 
         document
             .getElementById("columnaDirecciones")
