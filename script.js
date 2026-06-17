@@ -4,8 +4,8 @@ let respondida = false;
 let puntaje = 0;
 let errores = [];
 const TOTAL_PREGUNTAS = 30;
-const sonidoError = new Audio("error.mp3");
-const sonidoAcierto = new Audio("acierto.mp3");
+const sonidoError = new Audio("./sonidoError.mp3");
+const sonidoAcierto = new Audio("./sonidoAcierto.mp3");
 
 fetch("direcciones.json")
 .then(r => r.json())
