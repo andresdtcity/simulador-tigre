@@ -76,7 +76,11 @@ function generarDireccionFalsa() {
 
     }
 
-    return (c.calle + " " + numero).toLowerCase();
+    let nombreCalle = /^\d+$/.test(c.calle.trim())
+        ? "Calle " + c.calle
+        : c.calle;
+
+    return (nombreCalle + " " + numero).toLowerCase();
 
 }
 
