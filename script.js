@@ -84,20 +84,21 @@ if (mapa) {
     cont.innerHTML = "";
 
     // respuestas falsas
-    let falsas = [];
+   let falsas = [];
 
-    while (falsas.length < 2) {
+while (falsas.length < 2) {
+    let direccion =
+        direccionesFalsas[
+            Math.floor(Math.random() * direccionesFalsas.length)
+        ];
 
-        let random =
-            preguntas[Math.floor(Math.random() * preguntas.length)].direccion;
-
-        if (
-            random !== p.direccion &&
-            !falsas.includes(random)
-        ) {
-            falsas.push(random);
-        }
+    if (
+        direccion !== p.direccion &&
+        !falsas.includes(direccion)
+    ) {
+        falsas.push(direccion);
     }
+}
 
     // mezclar opciones
     let opciones = [
