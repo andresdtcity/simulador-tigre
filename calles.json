@@ -1,0 +1,807 @@
+[
+  {
+    "calle": "1",
+    "parInicio": 102,
+    "parFin": 2500,
+    "imparInicio": 101,
+    "imparFin": 2499
+  },
+  {
+    "calle": "10",
+    "parInicio": 0,
+    "parFin": 3400,
+    "imparInicio": 0,
+    "imparFin": 3399
+  },
+  {
+    "calle": "11 DE FEBRERO",
+    "parInicio": 0,
+    "parFin": 1900,
+    "imparInicio": 0,
+    "imparFin": 1899
+  },
+  {
+    "calle": "12",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "12 DE OCTUBRE",
+    "parInicio": 2,
+    "parFin": 1200,
+    "imparInicio": 1,
+    "imparFin": 1199
+  },
+  {
+    "calle": "13",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "14",
+    "parInicio": 0,
+    "parFin": 4300,
+    "imparInicio": 0,
+    "imparFin": 4299
+  },
+  {
+    "calle": "14 DE MAYO",
+    "parInicio": 602,
+    "parFin": 700,
+    "imparInicio": 601,
+    "imparFin": 699
+  },
+  {
+    "calle": "15",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "17",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "18",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "2",
+    "parInicio": 0,
+    "parFin": 2650,
+    "imparInicio": 0,
+    "imparFin": 2649
+  },
+  {
+    "calle": "20",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "21",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "23",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "25 DE MAYO",
+    "parInicio": 0,
+    "parFin": 3000,
+    "imparInicio": 0,
+    "imparFin": 2999
+  },
+  {
+    "calle": "29 DE NOVIEMBRE",
+    "parInicio": 602,
+    "parFin": 2350,
+    "imparInicio": 601,
+    "imparFin": 2349
+  },
+  {
+    "calle": "3",
+    "parInicio": 0,
+    "parFin": 2650,
+    "imparInicio": 0,
+    "imparFin": 2649
+  },
+  {
+    "calle": "3 DE FEBRERO",
+    "parInicio": 402,
+    "parFin": 2000,
+    "imparInicio": 401,
+    "imparFin": 1999
+  },
+  {
+    "calle": "30",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "32",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "33",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "34",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "35",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "4",
+    "parInicio": 0,
+    "parFin": 2650,
+    "imparInicio": 0,
+    "imparFin": 2649
+  },
+  {
+    "calle": "5",
+    "parInicio": 0,
+    "parFin": 2650,
+    "imparInicio": 0,
+    "imparFin": 2649
+  },
+  {
+    "calle": "5 DE ABRIL",
+    "parInicio": 702,
+    "parFin": 900,
+    "imparInicio": 701,
+    "imparFin": 899
+  },
+  {
+    "calle": "6",
+    "parInicio": 0,
+    "parFin": 2650,
+    "imparInicio": 0,
+    "imparFin": 2649
+  },
+  {
+    "calle": "7",
+    "parInicio": 0,
+    "parFin": 2650,
+    "imparInicio": 0,
+    "imparFin": 2649
+  },
+  {
+    "calle": "8",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "9",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "9 DE JULIO",
+    "parInicio": 0,
+    "parFin": 2300,
+    "imparInicio": 0,
+    "imparFin": 2299
+  },
+  {
+    "calle": "ABRAHAM LINCOLN",
+    "parInicio": 2402,
+    "parFin": 2800,
+    "imparInicio": 2401,
+    "imparFin": 2799
+  },
+  {
+    "calle": "ACACIA",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ACACIAS",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ACANTILADO",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ACASSUSO",
+    "parInicio": 0,
+    "parFin": 400,
+    "imparInicio": 0,
+    "imparFin": 399
+  },
+  {
+    "calle": "ACCESO NORTE RAMAL TIGRE",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ADOLFO ALSINA",
+    "parInicio": 2,
+    "parFin": 750,
+    "imparInicio": 1,
+    "imparFin": 749
+  },
+  {
+    "calle": "ADOLFO LEBER",
+    "parInicio": 902,
+    "parFin": 1000,
+    "imparInicio": 901,
+    "imparFin": 999
+  },
+  {
+    "calle": "AGRIM. JOSÃ‰ ROMERO",
+    "parInicio": 2,
+    "parFin": 300,
+    "imparInicio": 1,
+    "imparFin": 299
+  },
+  {
+    "calle": "AGUA BENDITA",
+    "parInicio": 1202,
+    "parFin": 2250,
+    "imparInicio": 1201,
+    "imparFin": 2249
+  },
+  {
+    "calle": "AGUADO",
+    "parInicio": 2,
+    "parFin": 1300,
+    "imparInicio": 1,
+    "imparFin": 1299
+  },
+  {
+    "calle": "AGUARIBAY",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "AGUAS MANSAS",
+    "parInicio": 2202,
+    "parFin": 2250,
+    "imparInicio": 2201,
+    "imparFin": 2249
+  },
+  {
+    "calle": "AGUSTIN M GARCIA",
+    "parInicio": 0,
+    "parFin": 9500,
+    "imparInicio": 0,
+    "imparFin": 9499
+  },
+  {
+    "calle": "AGUSTÃN M. GARCÃA",
+    "parInicio": 2,
+    "parFin": 10300,
+    "imparInicio": 1,
+    "imparFin": 10299
+  },
+  {
+    "calle": "ALAMEDA",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ALAMO",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ALBARELLOS",
+    "parInicio": 0,
+    "parFin": 2100,
+    "imparInicio": 0,
+    "imparFin": 2099
+  },
+  {
+    "calle": "ALBERDI",
+    "parInicio": 302,
+    "parFin": 1300,
+    "imparInicio": 301,
+    "imparFin": 1299
+  },
+  {
+    "calle": "ALBERTI",
+    "parInicio": 602,
+    "parFin": 1200,
+    "imparInicio": 601,
+    "imparFin": 1199
+  },
+  {
+    "calle": "ALBERVIDE",
+    "parInicio": 802,
+    "parFin": 1100,
+    "imparInicio": 801,
+    "imparFin": 1099
+  },
+  {
+    "calle": "ALBIZZIA",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ALCORTA",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ALEGRIA",
+    "parInicio": 2252,
+    "parFin": 2800,
+    "imparInicio": 2251,
+    "imparFin": 2799
+  },
+  {
+    "calle": "ALEJANDRO VOLTA",
+    "parInicio": 0,
+    "parFin": 700,
+    "imparInicio": 0,
+    "imparFin": 699
+  },
+  {
+    "calle": "ALEMANIA",
+    "parInicio": 2,
+    "parFin": 700,
+    "imparInicio": 1,
+    "imparFin": 699
+  },
+  {
+    "calle": "ALEXANDER FLEMING",
+    "parInicio": 502,
+    "parFin": 800,
+    "imparInicio": 501,
+    "imparFin": 799
+  },
+  {
+    "calle": "ALEXIS CARREL",
+    "parInicio": 2,
+    "parFin": 3300,
+    "imparInicio": 1,
+    "imparFin": 3299
+  },
+  {
+    "calle": "ALFONSINA STORNI",
+    "parInicio": 2,
+    "parFin": 3200,
+    "imparInicio": 1,
+    "imparFin": 3199
+  },
+  {
+    "calle": "ALFREDO PALACIOS",
+    "parInicio": 302,
+    "parFin": 2500,
+    "imparInicio": 301,
+    "imparFin": 2499
+  },
+  {
+    "calle": "ALPACA",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ALSINA",
+    "parInicio": 402,
+    "parFin": 3400,
+    "imparInicio": 401,
+    "imparFin": 3399
+  },
+  {
+    "calle": "ALVEAR",
+    "parInicio": 102,
+    "parFin": 4100,
+    "imparInicio": 101,
+    "imparFin": 4099
+  },
+  {
+    "calle": "AMADO NERVO",
+    "parInicio": 2,
+    "parFin": 200,
+    "imparInicio": 1,
+    "imparFin": 199
+  },
+  {
+    "calle": "AMALIA",
+    "parInicio": 0,
+    "parFin": 500,
+    "imparInicio": 0,
+    "imparFin": 499
+  },
+  {
+    "calle": "AMERICA",
+    "parInicio": 702,
+    "parFin": 3100,
+    "imparInicio": 701,
+    "imparFin": 3099
+  },
+  {
+    "calle": "ANASTASIO EL POLLO",
+    "parInicio": 1702,
+    "parFin": 1800,
+    "imparInicio": 1701,
+    "imparFin": 1799
+  },
+  {
+    "calle": "ANDALUCIA",
+    "parInicio": 102,
+    "parFin": 700,
+    "imparInicio": 101,
+    "imparFin": 699
+  },
+  {
+    "calle": "ANGEL GALLARDO",
+    "parInicio": 0,
+    "parFin": 2200,
+    "imparInicio": 0,
+    "imparFin": 2199
+  },
+  {
+    "calle": "ANGOSTURA",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ANIBAL GONZALEZ",
+    "parInicio": 502,
+    "parFin": 1400,
+    "imparInicio": 501,
+    "imparFin": 1399
+  },
+  {
+    "calle": "ANTARES",
+    "parInicio": 1802,
+    "parFin": 2400,
+    "imparInicio": 1801,
+    "imparFin": 2399
+  },
+  {
+    "calle": "ANTARTIDA ARGENTINA",
+    "parInicio": 2,
+    "parFin": 3200,
+    "imparInicio": 1,
+    "imparFin": 3199
+  },
+  {
+    "calle": "ANTONIO GAUDI",
+    "parInicio": 402,
+    "parFin": 500,
+    "imparInicio": 401,
+    "imparFin": 499
+  },
+  {
+    "calle": "ANTONIO PERNA",
+    "parInicio": 1452,
+    "parFin": 2400,
+    "imparInicio": 1451,
+    "imparFin": 2399
+  },
+  {
+    "calle": "ARAMBURU",
+    "parInicio": 402,
+    "parFin": 500,
+    "imparInicio": 401,
+    "imparFin": 499
+  },
+  {
+    "calle": "ARAOZ DE LAMADRID",
+    "parInicio": 202,
+    "parFin": 500,
+    "imparInicio": 201,
+    "imparFin": 499
+  },
+  {
+    "calle": "ARDILLA",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ARENALES",
+    "parInicio": 2802,
+    "parFin": 3200,
+    "imparInicio": 2801,
+    "imparFin": 3199
+  },
+  {
+    "calle": "AREQUIPA",
+    "parInicio": 2,
+    "parFin": 2000,
+    "imparInicio": 1,
+    "imparFin": 1999
+  },
+  {
+    "calle": "AREVALO",
+    "parInicio": 2602,
+    "parFin": 3200,
+    "imparInicio": 2601,
+    "imparFin": 3199
+  },
+  {
+    "calle": "ARGENTINA",
+    "parInicio": 0,
+    "parFin": 600,
+    "imparInicio": 0,
+    "imparFin": 599
+  },
+  {
+    "calle": "ARIAS",
+    "parInicio": 202,
+    "parFin": 300,
+    "imparInicio": 201,
+    "imparFin": 299
+  },
+  {
+    "calle": "ARISTOBULO DEL VALLE",
+    "parInicio": 502,
+    "parFin": 3000,
+    "imparInicio": 501,
+    "imparFin": 2999
+  },
+  {
+    "calle": "ARMADILLO",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ARRECIFES",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "ARRIBEÃ‘OS",
+    "parInicio": 0,
+    "parFin": 700,
+    "imparInicio": 0,
+    "imparFin": 699
+  },
+  {
+    "calle": "ARTIGAS",
+    "parInicio": 0,
+    "parFin": 700,
+    "imparInicio": 0,
+    "imparFin": 699
+  },
+  {
+    "calle": "ASCASUBI",
+    "parInicio": 3002,
+    "parFin": 3100,
+    "imparInicio": 3001,
+    "imparFin": 3099
+  },
+  {
+    "calle": "ASTILLERO PARODI",
+    "parInicio": 2,
+    "parFin": 100,
+    "imparInicio": 1,
+    "imparFin": 99
+  },
+  {
+    "calle": "ASUNCION",
+    "parInicio": 802,
+    "parFin": 2500,
+    "imparInicio": 801,
+    "imparFin": 2499
+  },
+  {
+    "calle": "ASUNCIÃ“N",
+    "parInicio": 1602,
+    "parFin": 2200,
+    "imparInicio": 1601,
+    "imparFin": 2199
+  },
+  {
+    "calle": "AUSTRALIA",
+    "parInicio": 2202,
+    "parFin": 3200,
+    "imparInicio": 2201,
+    "imparFin": 3199
+  },
+  {
+    "calle": "AUSTRIA",
+    "parInicio": 0,
+    "parFin": 300,
+    "imparInicio": 0,
+    "imparFin": 299
+  },
+  {
+    "calle": "AUSTRIA NORTE",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "AV. AGUSTÃN M. GARCÃA",
+    "parInicio": 0,
+    "parFin": 7400,
+    "imparInicio": 0,
+    "imparFin": 7399
+  },
+  {
+    "calle": "AV. DE LAS INDUSTRIAS",
+    "parInicio": 3252,
+    "parFin": 3800,
+    "imparInicio": 3251,
+    "imparFin": 3799
+  },
+  {
+    "calle": "AV. GRAL. JUAN DOMINGO PERÃ“N",
+    "parInicio": 0,
+    "parFin": 8600,
+    "imparInicio": 0,
+    "imparFin": 8599
+  },
+  {
+    "calle": "AV. GRAL. PACHECO",
+    "parInicio": 0,
+    "parFin": 2200,
+    "imparInicio": 0,
+    "imparFin": 2199
+  },
+  {
+    "calle": "AV. ÃNGEL TORCUATO DE ALVEAR",
+    "parInicio": 0,
+    "parFin": 3800,
+    "imparInicio": 0,
+    "imparFin": 3799
+  },
+  {
+    "calle": "AVALOS",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "AVELLANEDA",
+    "parInicio": 2,
+    "parFin": 3200,
+    "imparInicio": 1,
+    "imparFin": 3199
+  },
+  {
+    "calle": "AYACUCHO",
+    "parInicio": 802,
+    "parFin": 1600,
+    "imparInicio": 801,
+    "imparFin": 1599
+  },
+  {
+    "calle": "AZAHARES",
+    "parInicio": 0,
+    "parFin": 0,
+    "imparInicio": 0,
+    "imparFin": 0
+  },
+  {
+    "calle": "AZCUENAGA",
+    "parInicio": 2,
+    "parFin": 400,
+    "imparInicio": 1,
+    "imparFin": 399
+  },
+  {
+    "calle": "AZOPARDO",
+    "parInicio": 2352,
+    "parFin": 2550,
+    "imparInicio": 2351,
+    "imparFin": 2549
+  },
+  {
+    "calle": "AZUL",
+    "parInicio": 0,
+    "parFin": 100,
+    "imparInicio": 0,
+    "imparFin": 99
+  },
+  {
+    "calle": "BACH",
+    "parInicio": 2,
+    "parFin": 150,
+    "imparInicio": 1,
+    "imparFin": 149
+  },
+  {
+    "calle": "BAHIA BLANCA",
+    "parInicio": 2252,
+    "parFin": 2300,
+    "imparInicio": 2251,
+    "imparFin": 2299
+  },
+  {
+    "calle": "BALBASTRO",
+    "parInicio": 602,
+    "parFin": 2700,
+    "imparInicio": 601,
+    "imparFin": 2699
+  },
+  {
+    "calle": "BALCARCE",
+    "parInicio": 0,
+    "parFin": 500,
+    "imparInicio": 0,
+    "imparFin": 499
+  },
+  {
+    "calle": "BALTASAR GRACIAN",
+    "parInicio": 802,
+    "parFin": 1300,
+    "imparInicio": 801,
+    "imparFin": 1299
+  },
+  {
+    "calle": "ÃNGEL T DE ALVEAR",
+    "parInicio": 102,
+    "parFin": 300,
+    "imparInicio": 101,
+    "imparFin": 299
+  }
+]
