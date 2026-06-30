@@ -8,6 +8,9 @@ const TOTAL_PREGUNTAS = 30;
 const sonidoError = new Audio("./sonidoError.mp3");
 const sonidoAcierto = new Audio("./sonidoAcierto.mp3");
 
+let segundosTranscurridos = 0;
+let timerInterval = null;
+
 Promise.all([
     fetch("direcciones.json").then(r => r.json()),
     fetch("calles.json").then(r => r.json())
@@ -23,7 +26,11 @@ Promise.all([
     console.log("Preguntas:", preguntas.length);
     console.log("Calles:", calles.length);
 
-    document.getElementById("btnInicio").disabled = false;
+    let btnInicio = document.getElementById("btnInicio");
+
+    if (btnInicio) {
+        btnInicio.disabled = false;
+    }
 
 })
 .catch(error => {
@@ -31,7 +38,17 @@ Promise.all([
     alert("Error cargando los archivos.");
 });
 
-    function generarDireccionFalsa() {
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker
+            .register("./service-worker.js")
+            .catch(error => {
+                console.error("Error registrando el service worker:", error);
+            });
+    });
+}
+
+function generarDireccionFalsa() {
 
     let c = calles[Math.floor(Math.random() * calles.length)];
 
@@ -59,7 +76,7 @@ Promise.all([
 
     }
 
-    return c.calle + " " + numero;
+    return (c.calle + " " + numero).toLowerCase();
 
 }
 
@@ -78,7 +95,58 @@ function comenzarExamen() {
     document.getElementById("inicio").style.display = "none";
     document.getElementById("contenedor").style.display = "block";
 
+    iniciarTimer();
     mostrarPregunta();
+}
+
+function iniciarTimer() {
+
+    segundosTranscurridos = 0;
+    actualizarTimer();
+
+    if (timerInterval) {
+        clearInterval(timerInterval);
+    }
+
+    timerInterval = setInterval(() => {
+        segundosTranscurridos++;
+        actualizarTimer();
+    }, 1000);
+}
+
+function detenerTimer() {
+
+    if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+    }
+}
+
+function actualizarTimer() {
+
+    let timerEl = document.getElementById("timer");
+
+    if (!timerEl) return;
+
+    let min = Math.floor(segundosTranscurridos / 60)
+        .toString()
+        .padStart(2, "0");
+
+    let seg = (segundosTranscurridos % 60)
+        .toString()
+        .padStart(2, "0");
+
+    timerEl.innerText = "⏱ " + min + ":" + seg;
+}
+
+function actualizarContador() {
+
+    let contadorEl = document.getElementById("contador");
+
+    if (!contadorEl) return;
+
+    contadorEl.innerText =
+        "Pregunta " + (indice + 1) + " de " + preguntas.length;
 }
 
 function siguiente() {
@@ -95,6 +163,8 @@ function siguiente() {
         mostrarPregunta();
 
     } else {
+
+        detenerTimer();
 
         document.getElementById("contenedor").innerHTML =
 `
@@ -133,15 +203,18 @@ function mostrarPregunta() {
 
     let mapa = document.getElementById("mapa");
 
-if (mapa) {
-    mapa.innerHTML = "";
-}
+    if (mapa) {
+        mapa.innerHTML = "";
+    }
+
     respondida = false;
 
     let p = preguntas[indice];
 
     document.getElementById("numeroPregunta").innerText =
-    "Pregunta " + (indice + 1) + " de " + preguntas.length;
+        "Pregunta " + (indice + 1) + " de " + preguntas.length;
+
+    actualizarContador();
 
     document.getElementById("pregunta").innerText =
         "¿Dónde se encuentra " + p.nombre + "?";
@@ -151,20 +224,20 @@ if (mapa) {
     cont.innerHTML = "";
 
     // respuestas falsas
-   let falsas = [];
+    let falsas = [];
 
-while (falsas.length < 2) {
+    while (falsas.length < 2) {
 
-    let direccion = generarDireccionFalsa();
+        let direccion = generarDireccionFalsa();
 
-    if (
-        direccion !== p.direccion &&
-        !falsas.includes(direccion)
-    ) {
-        falsas.push(direccion);
+        if (
+            direccion !== p.direccion &&
+            !falsas.includes(direccion)
+        ) {
+            falsas.push(direccion);
+        }
+
     }
-
-}
 
     // mezclar opciones
     let opciones = [
@@ -184,83 +257,71 @@ while (falsas.length < 2) {
 
         btn.onclick = function () {
 
-    if (respondida) return;
+            if (respondida) return;
 
-    respondida = true;
+            respondida = true;
 
-    let botones =
-        document.querySelectorAll(".opcion");
+            let botones =
+                document.querySelectorAll(".opcion");
 
-    botones.forEach(b => {
-        b.disabled = true;
-    });
+            botones.forEach(b => {
+                b.disabled = true;
+            });
 
-    if (op === p.direccion) {
+            if (op === p.direccion) {
 
-        btn.style.background = "green";
-        puntaje++;
-        sonidoAcierto.currentTime = 0;
-sonidoAcierto.play();
+                btn.style.background = "green";
+                puntaje++;
+                sonidoAcierto.currentTime = 0;
+                sonidoAcierto.play();
 
-   } else {
+            } else {
 
-    btn.style.background = "red";
-    sonidoError.currentTime = 0;
-sonidoError.play();
+                btn.style.background = "red";
+                sonidoError.currentTime = 0;
+                sonidoError.play();
 
-    errores.push({
-        nombre: p.nombre,
-        direccion: p.direccion
-    });
+                errores.push({
+                    nombre: p.nombre,
+                    direccion: p.direccion
+                });
 
-    botones.forEach(b => {
+                botones.forEach(b => {
 
-        if (b.innerText === p.direccion) {
+                    if (b.innerText === p.direccion) {
 
-            b.style.background = "green";
-        }
-    });
+                        b.style.background = "green";
+                    }
+                });
 
-    let correcto =
-        document.createElement("p");
+                let correcto =
+                    document.createElement("p");
 
-    correcto.innerHTML =
-        "<b>Respuesta correcta:</b> " +
-        p.direccion;
+                correcto.innerHTML =
+                    "<b>Respuesta correcta:</b> " +
+                    p.direccion;
 
-        document.getElementById("mapa").innerHTML = `
-    <h4>Ubicación en Google Maps</h4>
+                correcto.style.marginTop = "10px";
 
-    <iframe
-        width="100%"
-        height="300"
-        style="border:0;border-radius:10px;"
-        loading="lazy"
-        allowfullscreen
-        src="https://www.google.com/maps?q=${encodeURIComponent(p.maps + ', Tigre, Buenos Aires')}&output=embed">
-    </iframe>
-`;
+                cont.appendChild(correcto);
 
-    correcto.style.marginTop = "10px";
-
-    cont.appendChild(correcto);
-    document.getElementById("mapa").innerHTML = `
+                // El mapa solo se muestra cuando la respuesta es incorrecta
+                document.getElementById("mapa").innerHTML = `
+<h4>Ubicación en Google Maps</h4>
 <iframe
     width="100%"
     height="300"
     style="border:0;border-radius:10px;"
     loading="lazy"
-    src="https://maps.google.com/maps?q=${encodeURIComponent(
-        p.direccion + ", Tigre, Buenos Aires"
-    )}&output=embed">
+    allowfullscreen
+    src="https://www.google.com/maps?q=${encodeURIComponent(p.maps + ', Tigre, Buenos Aires')}&output=embed">
 </iframe>`;
-`;
-        }
-    };
+            }
+        };
 
-    document
-        .getElementById("opciones")
-        .appendChild(btn);
+        document
+            .getElementById("opciones")
+            .appendChild(btn);
     });
 }
 
@@ -413,6 +474,7 @@ function practicarErrores() {
             .appendChild(btn);
     });
 }
+
 function reiniciarExamen() {
 
     preguntas = preguntas

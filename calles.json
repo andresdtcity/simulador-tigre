@@ -21,25 +21,11 @@
     "imparFin": 1899
   },
   {
-    "calle": "12",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
     "calle": "12 DE OCTUBRE",
     "parInicio": 2,
     "parFin": 1200,
     "imparInicio": 1,
     "imparFin": 1199
-  },
-  {
-    "calle": "13",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
   },
   {
     "calle": "14",
@@ -56,53 +42,11 @@
     "imparFin": 699
   },
   {
-    "calle": "15",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "17",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "18",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
     "calle": "2",
     "parInicio": 0,
     "parFin": 2650,
     "imparInicio": 0,
     "imparFin": 2649
-  },
-  {
-    "calle": "20",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "21",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "23",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
   },
   {
     "calle": "25 DE MAYO",
@@ -131,41 +75,6 @@
     "parFin": 2000,
     "imparInicio": 401,
     "imparFin": 1999
-  },
-  {
-    "calle": "30",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "32",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "33",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "34",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "35",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
   },
   {
     "calle": "4",
@@ -203,20 +112,6 @@
     "imparFin": 2649
   },
   {
-    "calle": "8",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "9",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
     "calle": "9 DE JULIO",
     "parInicio": 0,
     "parFin": 2300,
@@ -231,39 +126,11 @@
     "imparFin": 2799
   },
   {
-    "calle": "ACACIA",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "ACACIAS",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "ACANTILADO",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
     "calle": "ACASSUSO",
     "parInicio": 0,
     "parFin": 400,
     "imparInicio": 0,
     "imparFin": 399
-  },
-  {
-    "calle": "ACCESO NORTE RAMAL TIGRE",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
   },
   {
     "calle": "ADOLFO ALSINA",
@@ -301,13 +168,6 @@
     "imparFin": 1299
   },
   {
-    "calle": "AGUARIBAY",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
     "calle": "AGUAS MANSAS",
     "parInicio": 2202,
     "parFin": 2250,
@@ -327,20 +187,6 @@
     "parFin": 10300,
     "imparInicio": 1,
     "imparFin": 10299
-  },
-  {
-    "calle": "ALAMEDA",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "ALAMO",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
   },
   {
     "calle": "ALBARELLOS",
@@ -369,20 +215,6 @@
     "parFin": 1100,
     "imparInicio": 801,
     "imparFin": 1099
-  },
-  {
-    "calle": "ALBIZZIA",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "ALCORTA",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
   },
   {
     "calle": "ALEGRIA",
@@ -432,13 +264,6 @@
     "parFin": 2500,
     "imparInicio": 301,
     "imparFin": 2499
-  },
-  {
-    "calle": "ALPACA",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
   },
   {
     "calle": "ALSINA",
@@ -497,13 +322,6 @@
     "imparFin": 2199
   },
   {
-    "calle": "ANGOSTURA",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
     "calle": "ANIBAL GONZALEZ",
     "parInicio": 502,
     "parFin": 1400,
@@ -553,13 +371,6 @@
     "imparFin": 499
   },
   {
-    "calle": "ARDILLA",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
     "calle": "ARENALES",
     "parInicio": 2802,
     "parFin": 3200,
@@ -600,20 +411,6 @@
     "parFin": 3000,
     "imparInicio": 501,
     "imparFin": 2999
-  },
-  {
-    "calle": "ARMADILLO",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
-    "calle": "ARRECIFES",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
   },
   {
     "calle": "ARRIBEÃ‘OS",
@@ -672,13 +469,6 @@
     "imparFin": 299
   },
   {
-    "calle": "AUSTRIA NORTE",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
     "calle": "AV. AGUSTÃN M. GARCÃA",
     "parInicio": 0,
     "parFin": 7400,
@@ -714,13 +504,6 @@
     "imparFin": 3799
   },
   {
-    "calle": "AVALOS",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
-  },
-  {
     "calle": "AVELLANEDA",
     "parInicio": 2,
     "parFin": 3200,
@@ -733,13 +516,6 @@
     "parFin": 1600,
     "imparInicio": 801,
     "imparFin": 1599
-  },
-  {
-    "calle": "AZAHARES",
-    "parInicio": 0,
-    "parFin": 0,
-    "imparInicio": 0,
-    "imparFin": 0
   },
   {
     "calle": "AZCUENAGA",
