@@ -119,10 +119,8 @@ if (mapa) {
    let falsas = [];
 
 while (falsas.length < 2) {
-    let direccion =
-        direccionesFalsas[
-            Math.floor(Math.random() * direccionesFalsas.length)
-        ];
+
+    let direccion = generarDireccionFalsa();
 
     if (
         direccion !== p.direccion &&
@@ -130,6 +128,7 @@ while (falsas.length < 2) {
     ) {
         falsas.push(direccion);
     }
+
 }
 
     // mezclar opciones
