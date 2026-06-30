@@ -8,20 +8,28 @@ const TOTAL_PREGUNTAS = 30;
 const sonidoError = new Audio("./sonidoError.mp3");
 const sonidoAcierto = new Audio("./sonidoAcierto.mp3");
 
-fetch("direcciones.json")
-.then(r => r.json())
-.then(data => {
+Promise.all([
+    fetch("direcciones.json").then(r => r.json()),
+    fetch("calles.json").then(r => r.json())
+])
+.then(([datosPreguntas, datosCalles]) => {
 
-    preguntas = data
+    preguntas = datosPreguntas
         .sort(() => Math.random() - 0.5)
         .slice(0, TOTAL_PREGUNTAS);
 
+    calles = datosCalles;
+
+    console.log("Preguntas:", preguntas.length);
+    console.log("Calles:", calles.length);
+
+    document.getElementById("btnInicio").disabled = false;
+
+})
+.catch(error => {
+    console.error(error);
+    alert("Error cargando los archivos.");
 });
-fetch("calles.json")
-    .then(r => r.json())
-    .then(data => {
-        calles = data;
-    });
 
     function generarDireccionFalsa() {
 
@@ -103,6 +111,16 @@ Practicar errores
 }
 
 function mostrarPregunta() {
+
+     if (preguntas.length === 0) {
+        alert("Las preguntas todavía no se cargaron.");
+        return;
+    }
+
+    if (calles.length === 0) {
+        alert("Las calles todavía no se cargaron.");
+        return;
+    }
 
     let mapa = document.getElementById("mapa");
 
@@ -218,17 +236,15 @@ sonidoError.play();
 
     cont.appendChild(correcto);
     document.getElementById("mapa").innerHTML = `
-    <h4>📍 Ubicación</h4>
-
-    <iframe
-        width="100%"
-        height="300"
-        style="border:0;border-radius:10px;"
-        loading="lazy"
-        src="https://maps.google.com/maps?q=${encodeURIComponent(
-            p.direccion + ", Tigre, Buenos Aires"
-        )}&output=embed">
-    </iframe>
+<iframe
+    width="100%"
+    height="300"
+    style="border:0;border-radius:10px;"
+    loading="lazy"
+    src="https://maps.google.com/maps?q=${encodeURIComponent(
+        p.direccion + ", Tigre, Buenos Aires"
+    )}&output=embed">
+</iframe>`;
 `;
         }
     };
