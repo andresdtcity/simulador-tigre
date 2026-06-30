@@ -8,7 +8,15 @@ const TOTAL_PREGUNTAS = 30;
 const sonidoError = new Audio("./sonidoError.mp3");
 const sonidoAcierto = new Audio("./sonidoAcierto.mp3");
 
+fetch("direcciones.json")
+.then(r => r.json())
+.then(data => {
 
+    preguntas = data
+        .sort(() => Math.random() - 0.5)
+        .slice(0, TOTAL_PREGUNTAS);
+
+});
 fetch("calles.json")
     .then(r => r.json())
     .then(data => {
