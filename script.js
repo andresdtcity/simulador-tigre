@@ -318,8 +318,9 @@ function mostrarPregunta() {
     style="border:0;border-radius:10px;"
     loading="lazy"
     allowfullscreen
-    src="https://www.google.com/maps?q=${encodeURIComponent(p.maps + ', Tigre, Buenos Aires')}&output=embed">
-</iframe>`;
+    src="https://www.google.com/maps?q=${encodeURIComponent(p.direccion + ', Tigre, Buenos Aires')}&output=embed">
+</iframe>
+<a href="${p.maps}" target="_blank" rel="noopener" class="enlace-maps">Abrir en Google Maps ↗</a>`;
             }
         };
 
