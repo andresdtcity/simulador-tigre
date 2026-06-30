@@ -3,17 +3,49 @@ let indice = 0;
 let respondida = false;
 let puntaje = 0;
 let errores = [];
+let calles = [];
 const TOTAL_PREGUNTAS = 30;
 const sonidoError = new Audio("./sonidoError.mp3");
 const sonidoAcierto = new Audio("./sonidoAcierto.mp3");
 
-fetch("direcciones.json")
-.then(r => r.json())
-.then(data => {
-    preguntas = data
-    .sort(() => Math.random() - 0.5)
-    .slice(0, TOTAL_PREGUNTAS);
-});
+
+fetch("calles.json")
+    .then(r => r.json())
+    .then(data => {
+        calles = data;
+    });
+
+    function generarDireccionFalsa() {
+
+    let c = calles[Math.floor(Math.random() * calles.length)];
+
+    let usarPar = Math.random() < 0.5;
+
+    let numero;
+
+    if (usarPar) {
+
+        numero =
+            c.parInicio +
+            Math.floor(
+                Math.random() *
+                ((c.parFin - c.parInicio) / 2 + 1)
+            ) * 2;
+
+    } else {
+
+        numero =
+            c.imparInicio +
+            Math.floor(
+                Math.random() *
+                ((c.imparFin - c.imparInicio) / 2 + 1)
+            ) * 2;
+
+    }
+
+    return c.calle + " " + numero;
+
+}
 
 function comenzarExamen() {
 
