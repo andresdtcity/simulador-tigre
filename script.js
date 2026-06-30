@@ -65,8 +65,17 @@ Promise.all([
 
 function comenzarExamen() {
 
-    document.getElementById("inicio").style.display = "none";
+    if (preguntas.length === 0) {
+        alert("Las preguntas todavía no terminaron de cargarse.");
+        return;
+    }
 
+    if (calles.length === 0) {
+        alert("Las calles todavía no terminaron de cargarse.");
+        return;
+    }
+
+    document.getElementById("inicio").style.display = "none";
     document.getElementById("contenedor").style.display = "block";
 
     mostrarPregunta();
