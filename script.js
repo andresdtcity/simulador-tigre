@@ -279,6 +279,10 @@ function mostrarPregunta() {
                 sonidoAcierto.currentTime = 0;
                 sonidoAcierto.play();
 
+                setTimeout(() => {
+                    siguiente();
+                }, 900);
+
             } else {
 
                 btn.style.background = "red";

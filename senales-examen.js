@@ -95,6 +95,10 @@ function mostrarPreguntaSenal() {
                 sonidoAcierto.currentTime = 0;
                 sonidoAcierto.play();
 
+                setTimeout(() => {
+                    siguienteSenal();
+                }, 900);
+
             } else {
 
                 btn.style.background = "red";

@@ -3,20 +3,36 @@
    crearSVGSenal(senal) -> string SVG completo (viewBox 0 0 160 160)
    =================================================================== */
 
-function _flechaPath(cx, cy, len, ancho, curva, espejo) {
-    // flecha simple apuntando hacia arriba (luego se rota por transform)
+function _flechaPath(cx, cy, len, grosor, curva, espejo) {
+    // flecha sólida rellena, apuntando hacia arriba (se rota por transform)
     let s = espejo ? -1 : 1;
+    let w = grosor * 0.9; // ancho del asta
+    let hw = grosor * 1.9; // ancho de la punta
+
     if (!curva) {
+        let top = cy - len / 2;
+        let bottom = cy + len / 2;
+        let headBase = top + len * 0.42;
         return `
-            <line x1="${cx}" y1="${cy+len/2}" x2="${cx}" y2="${cy-len/2}" stroke-width="${ancho}" stroke-linecap="round"/>
-            <polyline points="${cx-len*0.32*s},${cy-len/2+len*0.34} ${cx},${cy-len/2} ${cx+len*0.32*s},${cy-len/2+len*0.34}" fill="none" stroke-width="${ancho}" stroke-linecap="round" stroke-linejoin="round"/>
+            <polygon points="
+                ${cx - w/2},${bottom} ${cx + w/2},${bottom}
+                ${cx + w/2},${headBase} ${cx + hw},${headBase}
+                ${cx},${top} ${cx - hw},${headBase}
+                ${cx - w/2},${headBase}
+            " stroke-linejoin="round"/>
         `;
     }
+
+    // flecha curva (giro): trazo grueso con punta sólida al final
+    let r = len * 0.5;
+    let x0 = cx + r * s, y0 = cy + len * 0.42;
+    let x1 = cx - r * 0.15 * s, y1 = cy - len * 0.5;
     return `
-        <path d="M ${cx} ${cy+len/2} Q ${cx-len*0.55*s} ${cy+len/2} ${cx-len*0.55*s} ${cy} Q ${cx-len*0.55*s} ${cy-len*0.55} ${cx-len*0.1*s} ${cy-len*0.55}"
-              fill="none" stroke-width="${ancho}" stroke-linecap="round"/>
-        <polyline points="${cx-len*0.32*s},${cy-len*0.78} ${cx-len*0.06*s},${cy-len*0.6} ${cx-len*0.3*s},${cy-len*0.42}"
-              fill="none" stroke-width="${ancho}" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M ${x0} ${y0} Q ${cx + r*s} ${cy - r*0.15} ${x1} ${y1}"
+              fill="none" stroke-width="${grosor}" stroke-linecap="round"/>
+        <polygon points="
+            ${x1 - 13*s},${y1 + 3} ${x1 + 15*s},${y1 - 2} ${x1 - 2*s},${y1 - 17}
+        "/>
     `;
 }
 
@@ -262,8 +278,9 @@ function dibujarIcono(icono, color, colorFondo) {
         case "flecha": {
             let g = _flechaPath(80, 85, 55, 9, !!icono.curva, !!icono.espejo);
             let g2 = icono.doble ? _flechaPath(80, 85, 55, 9, !!icono.curva, !icono.espejo) : "";
-            let group = `<g stroke="${color}" fill="none">${g}${g2}</g>`;
-            let tach = icono.tachada ? `<line x1="48" y1="125" x2="112" y2="45" stroke="${color}" stroke-width="6" stroke-linecap="round"/>` : "";
+            let relleno = icono.curva ? "none" : color;
+            let group = `<g fill="${relleno}" stroke="${color}">${g}${g2}</g>`;
+            let tach = icono.tachada ? `<line x1="46" y1="128" x2="114" y2="42" stroke="#e0453a" stroke-width="9" stroke-linecap="round"/>` : "";
             return `<g transform="rotate(${icono.rotacion||0} 80 85)">${group}</g>${tach}`;
         }
         case "persona": {
