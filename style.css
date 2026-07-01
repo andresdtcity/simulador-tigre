@@ -134,7 +134,8 @@ h3{
   line-height: 1.5;
 }
 
-#contenedor{
+#contenedor,
+#contenedorSenales{
   display:none;
   background:white;
   padding:20px;
@@ -143,7 +144,8 @@ h3{
   border: 1px solid var(--border);
 }
 
-#numeroPregunta{
+#numeroPregunta,
+#numeroPreguntaSenal{
   color: var(--muted);
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -202,6 +204,60 @@ button:disabled{
   background: var(--yellow-dark);
 }
 
+#menuModos{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+#menuModos button{
+  margin-top: 0;
+  padding: 18px 16px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  text-align: left;
+}
+
+#menuModos button .sub{
+  font-size: 12.5px;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+#btnInicioSenales{
+  background: var(--navy);
+  color: white;
+}
+
+#btnInicioSenales:hover:not(:disabled){
+  background: var(--navy-light);
+}
+
+#imagenSenal{
+  display: flex;
+  justify-content: center;
+  margin: 4px 0 18px;
+}
+
+#imagenSenal svg{
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(0 4px 10px rgba(22,35,58,0.15));
+}
+
+#preguntaSenal{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
 #siguiente{
   background: var(--navy);
 }
@@ -224,7 +280,8 @@ button:disabled{
   opacity: 1;
 }
 
-#opciones p{
+#opciones p,
+#opcionesSenal p{
   background: #f0fbf4;
   border: 1px solid #cdebd8;
   border-radius: var(--radius-sm);

@@ -19,6 +19,7 @@
   <span id="contador"></span>
   <span id="timer"></span>
 </div>
+
 <div id="inicio">
 
   <h2>Bienvenido</h2>
@@ -27,16 +28,22 @@
     Simulador del examen teórico de Tigre.
   </p>
 
-  <p>
-    Tendrás 30 preguntas aleatorias.
-  </p>
+  <div id="menuModos">
 
-  <button id="btnInicio" onclick="comenzarExamen()">
-    Comenzar examen
-</button>
+    <button id="btnInicio" onclick="comenzarExamen()" disabled>
+      📍 Examen de direcciones
+      <span class="sub">30 preguntas sobre ubicaciones</span>
+    </button>
+
+    <button id="btnInicioSenales" onclick="iniciarExamenSenales()">
+      🛑 Examen de señales
+      <span class="sub">20 preguntas sobre señalización vial</span>
+    </button>
+
+  </div>
 
 </div>
-  
+
 <div id="contenedor">
   <h3 id="numeroPregunta"></h3>
   <div id="pregunta"></div>
@@ -48,8 +55,20 @@
   </button>
 </div>
 
+<div id="contenedorSenales">
+  <h3 id="numeroPreguntaSenal"></h3>
+  <div id="imagenSenal"></div>
+  <div id="preguntaSenal"></div>
+  <div id="opcionesSenal"></div>
 
+  <button id="siguienteSenal" onclick="siguienteSenal()">
+    Siguiente
+  </button>
+</div>
 
+<script src="senales-data.js"></script>
+<script src="senales-iconos.js"></script>
+<script src="senales-examen.js"></script>
 <script src="script.js"></script>
 
 </body>
